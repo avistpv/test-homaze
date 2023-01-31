@@ -3,31 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { render } from "react-dom"
-import {createStore, applyMiddleware, Store, compose} from "redux"
+import {createStore, applyMiddleware, Store} from "redux"
 import { Provider } from "react-redux"
 import thunk from "redux-thunk"
-import reducer from "./store/reducer"
-import { configureStore } from '@reduxjs/toolkit'
-const store: Store<CardState, CardAction> & {
-    dispatch: DispatchType
-} = createStore(
-    reducer, applyMiddleware(thunk))
+import reducer from "./store/reducer";
+import { composeWithDevTools } from '@redux-devtools/extension';
 
+const composeEnhancers = composeWithDevTools({
+});
 
-
-// const composeEnhancers =
-//     typeof window === 'object' &&
-//     // @ts-ignore
-//     window.REDUX_DEVTOOLS_EXTENSION_COMPOSE ?
-//         // @ts-ignore
-//         window.REDUX_DEVTOOLS_EXTENSION_COMPOSE({
-//             // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
-//         }) : compose;
-//
-// const store = createStore(
-//     reducer,
-//     composeEnhancers(applyMiddleware(thunk)))
+const store = createStore(
+    reducer,
+    composeEnhancers(applyMiddleware(thunk)))
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

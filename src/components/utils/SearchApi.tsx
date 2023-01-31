@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-
 export default function SearchApi() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -19,7 +18,6 @@ export default function SearchApi() {
                 }
             )
     }, [])
-
 
     return(
         <ul>
