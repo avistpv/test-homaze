@@ -9,6 +9,7 @@ export const SpanStyles = styled('span')<{
     color?: Color;
     opacity?: number;
 }>`
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: ${({ fw }) => fw || 400};
   font-size: ${({ fz }) => fz || 14}px;

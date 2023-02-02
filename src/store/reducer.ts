@@ -3,7 +3,8 @@ import {CardAction, CardState} from "../type";
 import {sortByData} from "../utils/sortByData";
 
 const initialState: CardState = {
-    cards: []
+    cards: [],
+    initCard: []
 }
 
 const reducer = (

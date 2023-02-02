@@ -50,10 +50,15 @@ export const CardStyles = styled(Card)`
   }
 
   .MuiCardContent-root {
-    padding: 20px;
+    padding: 10px 20px 0;
 
     .MuiCardActions-root {
+      margin: 20px 0;
       padding: 0;
+      
+      .MuiButton-root:not(:first-of-type) {
+        margin-left: 3px;
+      }
     }
   }
 `

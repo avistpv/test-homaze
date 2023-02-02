@@ -8,6 +8,8 @@ import {FILTER_CARDS} from "../../store/actionTypes";
 import {SearchBarStyles} from "./SeacrhBarStyles";
 
 export default function SearchBar() {
+    const [value, setValue] = useState('');
+
     const dispatch: Dispatch<any> = useDispatch()
     const cards: readonly ICard[] = useSelector(
         (state: CardState) => state.cards,
@@ -37,3 +39,5 @@ export default function SearchBar() {
             />
     );
 }
+
+
