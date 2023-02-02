@@ -15,14 +15,19 @@ export const SpanStyles = styled('span')<{
   line-height: ${({ lh }) => lh || 20}px;
   letter-spacing: 0.272728px;
   opacity: ${({ opacity }) => (opacity !== undefined ? opacity : 1)};
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+
   ${({ color }) => {
     if (color === 'gray') {
-        return css`
-          color: #9F9F9F;
-        `;
+      return css`
+        color: #9F9F9F;
+      `;
     }
     return css`
       color: #2d2d2d;
     `;
-    }}
+  }}
 `;

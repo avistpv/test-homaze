@@ -8,23 +8,31 @@ export const CardStyles = styled(Card)`
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   padding: 0;
-  text-align: start;
-
+  
+  
   .MuiCardHeader-root {
     background-color: #F6F9FA;
-    padding: 20px;
-
+    padding: 0 20px;
+    height: 76px;
+    font-family: 'Poppins', sans-serif;
+    
+    .MuiCardHeader-content {
+      overflow: hidden;
+    }
+  
     .MuiCardHeader-title {
-      font-family: 'Poppins, sans-serif';
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 20px;
       letter-spacing: 0.272728px;
       color: #2D2D2D;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
     }
     .MuiCardHeader-subheader {
-      font-family: 'Poppins, sans-serif';
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -34,6 +42,10 @@ export const CardStyles = styled(Card)`
       opacity: 0.5;
       text-transform: uppercase;
       margin-top: 4px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
     }
   }
 
@@ -50,5 +62,9 @@ export const CardStyles = styled(Card)`
 export const StatusStyles = styled('div')`
   display: flex;
   flex-direction: column;
+  
+  & > span:first-of-type {
+    margin-bottom: 3px;
+  }
 `
 

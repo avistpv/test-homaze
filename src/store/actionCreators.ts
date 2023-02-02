@@ -1,10 +1,11 @@
 import {GET_CARDS} from "./actionTypes";
+import {DispatchType, ICard} from "../type";
 
-export function getCards() {
-    const action: CardAction = {
+export function addCards(cards: ICard[]){
+    return {
         type: GET_CARDS,
+        cards
     }
-    return simulateHttpRequest(action)
 }
 
 export function simulateHttpRequest(action: CardAction) {
