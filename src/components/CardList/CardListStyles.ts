@@ -11,8 +11,3 @@ export const CardListStyles = styled('ul')`
   row-gap: 30px;
  
 `
-
-
-//@media (min-width: 600px) {
-//  max-width: 1440px;
-//}

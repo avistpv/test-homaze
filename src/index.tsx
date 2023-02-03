@@ -16,7 +16,7 @@ const store = createStore(
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
-export type AppDispatch = typeof store.dispatch
+
 root.render(
     <Provider store={store}>
         <App />

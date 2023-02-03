@@ -1,7 +1,7 @@
 import {styled} from "@mui/material/styles";
 import Button from '@mui/material/Button';
 
-export const ButtonStyles = styled(Button)`  
+export const ButtonStyles = styled(Button)`
   height: 28px;
   width: auto;
   padding: 4px 10px;
@@ -15,8 +15,8 @@ export const ButtonStyles = styled(Button)`
   color: #3CB2E4;
   box-shadow: none;
   text-transform: capitalize;
-  margin: 0;  
-  
+  margin: 0;
+
   &:hover {
     background: rgba(60, 178, 228, 0.1);
     filter: brightness(1.2);

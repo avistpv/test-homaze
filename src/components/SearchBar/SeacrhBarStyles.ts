@@ -8,7 +8,7 @@ export const SearchBarStyles = styled(TextField)`
   font-size: 14px;
   border: 1px solid #c0c0c0;
   border-radius: 7px;
-  
+
   .MuiOutlinedInput-root {
     padding-right: 15px;
   }
@@ -33,7 +33,7 @@ export const SearchBarStyles = styled(TextField)`
     width: 24px;
     opacity: 0.2;
   }
-  
+
   .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
     border-color: #2D2D2D;
   }

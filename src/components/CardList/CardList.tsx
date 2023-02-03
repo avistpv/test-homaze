@@ -4,7 +4,7 @@ import {getCards} from "../../store/actionCreators";
 import {shallowEqual, useSelector} from "react-redux";
 import Card from "../Card/Card";
 import {CardListStyles} from "./CardListStyles";
-import { useDispatch } from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {Dispatch} from "redux";
 
 export default function CardList() {

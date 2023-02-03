@@ -8,18 +8,18 @@ export const CardStyles = styled(Card)`
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   padding: 0;
-  
-  
+
+
   .MuiCardHeader-root {
     background-color: #F6F9FA;
     padding: 0 20px;
     height: 76px;
     font-family: 'Poppins', sans-serif;
-    
+
     .MuiCardHeader-content {
       overflow: hidden;
     }
-  
+
     .MuiCardHeader-title {
       font-style: normal;
       font-weight: 700;
@@ -32,6 +32,7 @@ export const CardStyles = styled(Card)`
       overflow: hidden;
       font-family: 'Poppins', sans-serif;
     }
+
     .MuiCardHeader-subheader {
       font-style: normal;
       font-weight: 400;
@@ -55,7 +56,7 @@ export const CardStyles = styled(Card)`
     .MuiCardActions-root {
       margin: 20px 0;
       padding: 0;
-      
+
       .MuiButton-root:not(:first-of-type) {
         margin-left: 3px;
       }
@@ -67,7 +68,7 @@ export const CardStyles = styled(Card)`
 export const StatusStyles = styled('div')`
   display: flex;
   flex-direction: column;
-  
+
   & > span:first-of-type {
     margin-bottom: 3px;
   }

@@ -23,7 +23,7 @@ const reducer = (
                 ...state,
                 cards: (action.payload || '').length < 2
                     ? state.initCard
-                    : state.initCard.filter((card ) => {console.log(action)
+                    : state.initCard.filter((card ) => {
                    const filteredName = card.customerName.toLowerCase().includes((action.payload || '').toLowerCase());
                    const filteredAddress = card.address.toLowerCase().includes((action.payload || '').toLowerCase());
                    return filteredName || filteredAddress

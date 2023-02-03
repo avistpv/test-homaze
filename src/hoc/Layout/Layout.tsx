@@ -1,7 +1,6 @@
 import React, {ReactNode} from 'react';
 import {LayoutStyles} from "./LayoutStyles";
 
-
 interface PageProps {
     children: ReactNode;
 }

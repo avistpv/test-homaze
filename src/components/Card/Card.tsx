@@ -38,7 +38,7 @@ export default function Card({
                 </CardActions>
                 <Stack direction="row" justifyContent="space-between">
                     <StatusStyles>
-                        <SpanStyles color={'gray' }>
+                        <SpanStyles color={'gray'}>
                             Last update
                         </SpanStyles>
                         <SpanStyles lh={24}>

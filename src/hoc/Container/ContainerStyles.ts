@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 export const ContainerStyles = styled(Container)`
   width: 100%;
   max-width: 1162px;
-  
+
   @media (min-width: 600px) {
     padding-left: 0;
     padding-right: 0;

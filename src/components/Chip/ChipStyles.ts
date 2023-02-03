@@ -12,7 +12,7 @@ export const ChipStyles = styled(Chip, {
   padding: 2px 10px;
   border-radius: 52px;
   transform: translateX(-10px);
-  
+
   .MuiChip-label {
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -25,27 +25,33 @@ export const ChipStyles = styled(Chip, {
   }
 
   ${({progress}) => {
-      if(progress === 'Done') {
-        return css`
-          background: #EBFCEC;
-          .MuiChip-label {
-            color: #30D869;
-          }
-      `}
-      if(progress === 'Cancelled') {
-        return css`
-          background: #EBF7FC;
-          .MuiChip-label {
-            color: #3CB2E4;
-            font-weight: 700;
-          }
-      `}
-      if(progress === 'Negotiation') {
-        return css`
-          background: #FAEEE8;
-          .MuiChip-label {
-            color: #E4783C;
-          }
-     `}
+    if (progress === 'Done') {
+      return css`
+        background: #EBFCEC;
+
+        .MuiChip-label {
+          color: #30D869;
+        }
+      `
+    }
+    if (progress === 'Cancelled') {
+      return css`
+        background: #EBF7FC;
+
+        .MuiChip-label {
+          color: #3CB2E4;
+          font-weight: 700;
+        }
+      `
+    }
+    if (progress === 'Negotiation') {
+      return css`
+        background: #FAEEE8;
+
+        .MuiChip-label {
+          color: #E4783C;
+        }
+      `
+    }
   }}
 `
